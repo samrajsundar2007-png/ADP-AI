@@ -1,0 +1,155 @@
+{
+  "algorithm": "Random Forest Classifier",
+  "model_type": "classification",
+  "accuracy_score": 99.0,
+  "metrics": {
+    "Accuracy": 0.99,
+    "Precision Weighted": 0.9901,
+    "Recall Weighted": 0.99,
+    "F1 Score Weighted": 0.9899,
+    "Training Rows": 400,
+    "Testing Rows": 100
+  },
+  "feature_importance": [
+    {
+      "feature": "Attendance",
+      "importance": 0.475339
+    },
+    {
+      "feature": "StudyHours",
+      "importance": 0.271097
+    },
+    {
+      "feature": "PreviousMarks",
+      "importance": 0.248537
+    },
+    {
+      "feature": "Assignments",
+      "importance": 0.005026
+    }
+  ],
+  "prediction_samples": [
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "0",
+      "predicted": "0"
+    },
+    {
+      "actual": "1",
+      "predicted": "1"
+    }
+  ],
+  "chart_data": {
+    "labels": [
+      "Attendance",
+      "StudyHours",
+      "PreviousMarks",
+      "Assignments"
+    ],
+    "values": [
+      0.475339,
+      0.271097,
+      0.248537,
+      0.005026
+    ],
+    "chart_type": "horizontalBar",
+    "title": "Random Forest Feature Importance"
+  },
+  "report_summary": {
+    "model_used": "Random Forest Classifier",
+    "explanation": "This model predicts category-based target values such as Yes/No, Pass/Fail, Placed/Not Placed, or High/Medium/Low.",
+    "why_random_forest": "Random Forest combines many decision trees and gives stable predictions with feature importance."
+  },
+  "dataset_details": {
+    "total_rows": 500,
+    "total_columns": 5,
+    "columns": [
+      "StudyHours",
+      "Attendance",
+      "Assignments",
+      "PreviousMarks",
+      "Result"
+    ],
+    "target_column": "Result"
+  },
+  "model_selection": {
+    "ai_detected_intent": "auto",
+    "final_task_type": "classification",
+    "decision_reason": "The target column is category-based or has limited unique values, so ADP AI selected Random Forest Classifier."
+  },
+  "recommendations": [
+    "Data quality: No major missing values found in the uploaded dataset.",
+    "No duplicate rows found, so the dataset is suitable for prediction analysis.",
+    "Classification analysis: Most common class in 'Result' is 'Fail' with 376 records.",
+    "High priority: 'Attendance' strongly influences 'Result'. Random Forest importance is 47.53%.",
+    "High priority: 'StudyHours' strongly influences 'Result'. Random Forest importance is 27.11%.",
+    "High priority: 'PreviousMarks' strongly influences 'Result'. Random Forest importance is 24.85%.",
+    "High priority: 'Assignments' strongly influences 'Result'. Random Forest importance is 0.5%.",
+    "Improvement plan: Focus on the top important features that influence 'Result' because they have the strongest impact on prediction."
+  ],
+  "recommendation_sections": {
+    "data_quality": [
+      "Data quality: No major missing values found in the uploaded dataset.",
+      "No duplicate rows found, so the dataset is suitable for prediction analysis."
+    ],
+    "target_analysis": [
+      "Classification analysis: Most common class in 'Result' is 'Fail' with 376 records.",
+      "High priority: 'Attendance' strongly influences 'Result'. Random Forest importance is 47.53%.",
+      "High priority: 'StudyHours' strongly influences 'Result'. Random Forest importance is 27.11%.",
+      "High priority: 'PreviousMarks' strongly influences 'Result'. Random Forest importance is 24.85%.",
+      "High priority: 'Assignments' strongly influences 'Result'. Random Forest importance is 0.5%."
+    ],
+    "domain_strategy": [
+      "Improvement plan: Focus on the top important features that influence 'Result' because they have the strongest impact on prediction."
+    ],
+    "goal_strategy": []
+  },
+  "prediction_flow": [
+    "User uploaded dataset",
+    "ADP AI read rows and columns",
+    "ADP AI checked target column",
+    "ADP AI cleaned missing values",
+    "ADP AI prepared numeric and categorical features",
+    "ADP AI selected suitable ML model",
+    "Random Forest model trained using train-test split",
+    "Model predictions generated",
+    "Evaluation metrics calculated",
+    "Feature importance generated",
+    "Recommendation intelligence generated",
+    "Prediction report prepared"
+  ],
+  "report_ready": true,
+  "report_id": "f61b7b5d-f535-4a53-9acb-f109d03a6ca5",
+  "report_download_url": "/api/report/download/f61b7b5d-f535-4a53-9acb-f109d03a6ca5"
+}

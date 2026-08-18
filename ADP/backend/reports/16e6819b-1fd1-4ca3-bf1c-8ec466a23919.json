@@ -1,0 +1,179 @@
+{
+  "algorithm": "Random Forest Regressor",
+  "model_type": "regression",
+  "accuracy_score": 96.73,
+  "metrics": {
+    "R2 Score": 0.9673,
+    "Mean Absolute Error": 11382.3176,
+    "Root Mean Squared Error": 14096.5629,
+    "Training Rows": 400,
+    "Testing Rows": 100
+  },
+  "feature_importance": [
+    {
+      "feature": "Profit",
+      "importance": 0.83016
+    },
+    {
+      "feature": "UnitPrice",
+      "importance": 0.084986
+    },
+    {
+      "feature": "UnitsSold",
+      "importance": 0.072632
+    },
+    {
+      "feature": "MarketingSpend",
+      "importance": 0.004585
+    },
+    {
+      "feature": "Date",
+      "importance": 0.004033
+    },
+    {
+      "feature": "Product",
+      "importance": 0.001915
+    },
+    {
+      "feature": "Region",
+      "importance": 0.001689
+    }
+  ],
+  "prediction_samples": [
+    {
+      "actual": 88756.0,
+      "predicted": 97290.6533
+    },
+    {
+      "actual": 83047.0,
+      "predicted": 59233.4867
+    },
+    {
+      "actual": 49129.0,
+      "predicted": 80386.7667
+    },
+    {
+      "actual": 112970.0,
+      "predicted": 107175.2267
+    },
+    {
+      "actual": 46178.0,
+      "predicted": 49386.59
+    },
+    {
+      "actual": 24774.0,
+      "predicted": 21486.4567
+    },
+    {
+      "actual": 128579.0,
+      "predicted": 116289.62
+    },
+    {
+      "actual": 128596.0,
+      "predicted": 131923.37
+    },
+    {
+      "actual": 92422.0,
+      "predicted": 109324.5767
+    },
+    {
+      "actual": 39257.0,
+      "predicted": 56802.2867
+    }
+  ],
+  "chart_data": {
+    "labels": [
+      "Profit",
+      "UnitPrice",
+      "UnitsSold",
+      "MarketingSpend",
+      "Date",
+      "Product",
+      "Region"
+    ],
+    "values": [
+      0.83016,
+      0.084986,
+      0.072632,
+      0.004585,
+      0.004033,
+      0.001915,
+      0.001689
+    ],
+    "chart_type": "bar",
+    "title": "Random Forest Feature Importance"
+  },
+  "report_summary": {
+    "model_used": "Random Forest Regressor",
+    "explanation": "This model predicts continuous numeric target values such as marks, price, sales, salary, CGPA, or amount.",
+    "why_random_forest": "Random Forest Regressor learns non-linear relationships and gives feature importance for better explainability."
+  },
+  "dataset_details": {
+    "total_rows": 500,
+    "total_columns": 8,
+    "columns": [
+      "Date",
+      "Product",
+      "Region",
+      "MarketingSpend",
+      "UnitsSold",
+      "UnitPrice",
+      "Sales",
+      "Profit"
+    ],
+    "target_column": "Sales"
+  },
+  "model_selection": {
+    "ai_detected_intent": "auto",
+    "final_task_type": "regression",
+    "decision_reason": "The target column is numeric and continuous, so ADP AI selected Random Forest Regressor."
+  },
+  "recommendations": [
+    "Data quality: No major missing values found in the uploaded dataset.",
+    "No duplicate rows found, so the dataset is suitable for prediction analysis.",
+    "Target analysis: Average Sales is 135256.25, median is 112716.5, minimum is 2875.0, and maximum is 419104.0.",
+    "High priority: Improve 'Profit' because it has a positive relationship with Sales. Random Forest importance is 83.02%.",
+    "High priority: Improve 'UnitPrice' because it has a positive relationship with Sales. Random Forest importance is 8.5%.",
+    "High priority: Improve 'UnitsSold' because it has a positive relationship with Sales. Random Forest importance is 7.26%.",
+    "High priority: Improve 'MarketingSpend' because it has a positive relationship with Sales. Random Forest importance is 0.46%.",
+    "Best performing group in 'Date' is '2026-05-25' with average Sales of 419104.0. Follow patterns from this group.",
+    "Sales improvement: Focus on customer segments, products, or regions with higher revenue contribution.",
+    "Growth strategy: Increase campaigns for high-performing products and improve weak-performing categories."
+  ],
+  "recommendation_sections": {
+    "data_quality": [
+      "Data quality: No major missing values found in the uploaded dataset.",
+      "No duplicate rows found, so the dataset is suitable for prediction analysis."
+    ],
+    "target_analysis": [
+      "Target analysis: Average Sales is 135256.25, median is 112716.5, minimum is 2875.0, and maximum is 419104.0.",
+      "High priority: Improve 'Profit' because it has a positive relationship with Sales. Random Forest importance is 83.02%.",
+      "High priority: Improve 'UnitPrice' because it has a positive relationship with Sales. Random Forest importance is 8.5%.",
+      "High priority: Improve 'UnitsSold' because it has a positive relationship with Sales. Random Forest importance is 7.26%.",
+      "High priority: Improve 'MarketingSpend' because it has a positive relationship with Sales. Random Forest importance is 0.46%.",
+      "Best performing group in 'Date' is '2026-05-25' with average Sales of 419104.0. Follow patterns from this group."
+    ],
+    "domain_strategy": [
+      "Sales improvement: Focus on customer segments, products, or regions with higher revenue contribution.",
+      "Growth strategy: Increase campaigns for high-performing products and improve weak-performing categories."
+    ],
+    "goal_strategy": []
+  },
+  "prediction_flow": [
+    "User uploaded dataset",
+    "ADP AI read rows and columns",
+    "ADP AI checked target column",
+    "ADP AI cleaned missing values",
+    "ADP AI prepared numeric and categorical features",
+    "ADP AI selected suitable ML model",
+    "Random Forest model trained using train-test split",
+    "Model predictions generated",
+    "Evaluation metrics calculated",
+    "Feature importance generated",
+    "Recommendation intelligence generated",
+    "Prediction report prepared"
+  ],
+  "report_ready": true,
+  "report_id": "16e6819b-1fd1-4ca3-bf1c-8ec466a23919",
+  "report_download_url": "/api/report/download/16e6819b-1fd1-4ca3-bf1c-8ec466a23919"
+}

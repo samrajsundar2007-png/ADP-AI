@@ -1,0 +1,219 @@
+{
+  "algorithm": "Random Forest Regressor",
+  "model_type": "regression",
+  "accuracy_score": 99.7,
+  "metrics": {
+    "R2 Score": 0.997,
+    "Mean Absolute Error": 179.6446,
+    "Root Mean Squared Error": 446.2558,
+    "Training Rows": 7608,
+    "Testing Rows": 1902
+  },
+  "feature_importance": [
+    {
+      "feature": "Series_reference",
+      "importance": 0.580538
+    },
+    {
+      "feature": "Series_title_2",
+      "importance": 0.376894
+    },
+    {
+      "feature": "Period",
+      "importance": 0.03721
+    },
+    {
+      "feature": "Series_title_1",
+      "importance": 0.001848
+    },
+    {
+      "feature": "Group",
+      "importance": 0.001369
+    },
+    {
+      "feature": "Series_title_3",
+      "importance": 0.001327
+    },
+    {
+      "feature": "STATUS",
+      "importance": 0.000639
+    },
+    {
+      "feature": "Series_title_4",
+      "importance": 0.000175
+    },
+    {
+      "feature": "Suppressed",
+      "importance": 0.0
+    },
+    {
+      "feature": "UNITS",
+      "importance": 0.0
+    },
+    {
+      "feature": "Magnitude",
+      "importance": 0.0
+    },
+    {
+      "feature": "Subject",
+      "importance": 0.0
+    },
+    {
+      "feature": "Series_title_5",
+      "importance": 0.0
+    }
+  ],
+  "prediction_samples": [
+    {
+      "actual": 23883.359,
+      "predicted": 23883.7738
+    },
+    {
+      "actual": 666.243,
+      "predicted": 672.3676
+    },
+    {
+      "actual": 378.916,
+      "predicted": 378.8055
+    },
+    {
+      "actual": 292.64,
+      "predicted": 408.5709
+    },
+    {
+      "actual": 11396.519,
+      "predicted": 11536.1925
+    },
+    {
+      "actual": 1548.216,
+      "predicted": 1638.1659
+    },
+    {
+      "actual": 917.918,
+      "predicted": 835.2046
+    },
+    {
+      "actual": 1225.711,
+      "predicted": 1192.6614
+    },
+    {
+      "actual": 4088.925,
+      "predicted": 4024.1008
+    },
+    {
+      "actual": 3684.742,
+      "predicted": 3684.703
+    }
+  ],
+  "chart_data": {
+    "labels": [
+      "Series_reference",
+      "Series_title_2",
+      "Period",
+      "Series_title_1",
+      "Group",
+      "Series_title_3",
+      "STATUS",
+      "Series_title_4",
+      "Suppressed",
+      "UNITS",
+      "Magnitude",
+      "Subject",
+      "Series_title_5"
+    ],
+    "values": [
+      0.580538,
+      0.376894,
+      0.03721,
+      0.001848,
+      0.001369,
+      0.001327,
+      0.000639,
+      0.000175,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "chart_type": "bar",
+    "title": "Random Forest Feature Importance"
+  },
+  "report_summary": {
+    "model_used": "Random Forest Regressor",
+    "explanation": "This model predicts continuous numeric target values such as marks, price, sales, salary, CGPA, or amount.",
+    "why_random_forest": "Random Forest Regressor learns non-linear relationships and gives feature importance for better explainability."
+  },
+  "dataset_details": {
+    "total_rows": 9555,
+    "total_columns": 14,
+    "columns": [
+      "Series_reference",
+      "Period",
+      "Data_value",
+      "Suppressed",
+      "STATUS",
+      "UNITS",
+      "Magnitude",
+      "Subject",
+      "Group",
+      "Series_title_1",
+      "Series_title_2",
+      "Series_title_3",
+      "Series_title_4",
+      "Series_title_5"
+    ],
+    "target_column": "Data_value"
+  },
+  "model_selection": {
+    "ai_detected_intent": "auto",
+    "final_task_type": "regression",
+    "decision_reason": "The target column is numeric and continuous, so ADP AI selected Random Forest Regressor."
+  },
+  "recommendations": [
+    "Data quality: 14.31% values are missing. Fill important missing values before final prediction.",
+    "No duplicate rows found, so the dataset is suitable for prediction analysis.",
+    "Target analysis: Average Data_value is 5515.75, median is 2374.1, minimum is -398.19, and maximum is 43002.43.",
+    "Best performing group in 'Series_reference' is 'BDCQ.SF1FF1CT' with average Data_value of 32234.01. Follow patterns from this group.",
+    "Best performing group in 'Series_title_2' is 'Wholesale Trade' with average Data_value of 21468.24. Follow patterns from this group.",
+    "High priority: Improve 'Period' because it has a positive relationship with Data_value. Random Forest importance is 3.72%.",
+    "Best performing group in 'Series_title_1' is 'Sales (operating income)' with average Data_value of 8275.59. Follow patterns from this group.",
+    "Best performing group in 'Group' is 'Industry by financial variable (NZSIOC Level 1)' with average Data_value of 7876.31. Follow patterns from this group.",
+    "Improvement plan: Focus on the top important features that influence 'Data_value' because they have the strongest impact on prediction."
+  ],
+  "recommendation_sections": {
+    "data_quality": [
+      "Data quality: 14.31% values are missing. Fill important missing values before final prediction.",
+      "No duplicate rows found, so the dataset is suitable for prediction analysis."
+    ],
+    "target_analysis": [
+      "Target analysis: Average Data_value is 5515.75, median is 2374.1, minimum is -398.19, and maximum is 43002.43.",
+      "Best performing group in 'Series_reference' is 'BDCQ.SF1FF1CT' with average Data_value of 32234.01. Follow patterns from this group.",
+      "Best performing group in 'Series_title_2' is 'Wholesale Trade' with average Data_value of 21468.24. Follow patterns from this group.",
+      "High priority: Improve 'Period' because it has a positive relationship with Data_value. Random Forest importance is 3.72%.",
+      "Best performing group in 'Series_title_1' is 'Sales (operating income)' with average Data_value of 8275.59. Follow patterns from this group.",
+      "Best performing group in 'Group' is 'Industry by financial variable (NZSIOC Level 1)' with average Data_value of 7876.31. Follow patterns from this group."
+    ],
+    "domain_strategy": [
+      "Improvement plan: Focus on the top important features that influence 'Data_value' because they have the strongest impact on prediction."
+    ],
+    "goal_strategy": []
+  },
+  "prediction_flow": [
+    "User uploaded dataset",
+    "ADP AI read rows and columns",
+    "ADP AI checked target column",
+    "ADP AI cleaned missing values",
+    "ADP AI prepared numeric and categorical features",
+    "ADP AI selected suitable ML model",
+    "Random Forest model trained using train-test split",
+    "Model predictions generated",
+    "Evaluation metrics calculated",
+    "Feature importance generated",
+    "Recommendation intelligence generated",
+    "Prediction report prepared"
+  ],
+  "report_ready": true,
+  "report_id": "85ad2123-ad1c-4fcc-915e-b6ef36f4710a",
+  "report_download_url": "/api/report/download/85ad2123-ad1c-4fcc-915e-b6ef36f4710a"
+}

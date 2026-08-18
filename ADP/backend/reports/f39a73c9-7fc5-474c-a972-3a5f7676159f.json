@@ -1,0 +1,154 @@
+{
+  "algorithm": "Random Forest Regressor",
+  "model_type": "regression",
+  "accuracy_score": 99.42,
+  "metrics": {
+    "R2 Score": 0.9942,
+    "Mean Absolute Error": 9659.8164,
+    "Root Mean Squared Error": 11943.9113,
+    "Training Rows": 400,
+    "Testing Rows": 100
+  },
+  "feature_importance": [
+    {
+      "feature": "Revenue",
+      "importance": 0.593549
+    },
+    {
+      "feature": "Expenses",
+      "importance": 0.401798
+    },
+    {
+      "feature": "Assets",
+      "importance": 0.00239
+    },
+    {
+      "feature": "Liabilities",
+      "importance": 0.002263
+    }
+  ],
+  "prediction_samples": [
+    {
+      "actual": 87685.0,
+      "predicted": 79332.1367
+    },
+    {
+      "actual": 411820.0,
+      "predicted": 415916.7
+    },
+    {
+      "actual": 2905.0,
+      "predicted": -1128.5333
+    },
+    {
+      "actual": 172144.0,
+      "predicted": 183117.77
+    },
+    {
+      "actual": 339992.0,
+      "predicted": 317709.47
+    },
+    {
+      "actual": -72470.0,
+      "predicted": -65651.3167
+    },
+    {
+      "actual": 119648.0,
+      "predicted": 121108.6567
+    },
+    {
+      "actual": 292589.0,
+      "predicted": 278040.45
+    },
+    {
+      "actual": 197080.0,
+      "predicted": 190994.54
+    },
+    {
+      "actual": 165635.0,
+      "predicted": 160430.7
+    }
+  ],
+  "chart_data": {
+    "labels": [
+      "Revenue",
+      "Expenses",
+      "Assets",
+      "Liabilities"
+    ],
+    "values": [
+      0.593549,
+      0.401798,
+      0.00239,
+      0.002263
+    ],
+    "chart_type": "bar",
+    "title": "Random Forest Feature Importance"
+  },
+  "report_summary": {
+    "model_used": "Random Forest Regressor",
+    "explanation": "This model predicts continuous numeric target values such as marks, price, sales, salary, CGPA, or amount.",
+    "why_random_forest": "Random Forest Regressor learns non-linear relationships and gives feature importance for better explainability."
+  },
+  "dataset_details": {
+    "total_rows": 500,
+    "total_columns": 5,
+    "columns": [
+      "Revenue",
+      "Expenses",
+      "Assets",
+      "Liabilities",
+      "Profit"
+    ],
+    "target_column": "Profit"
+  },
+  "model_selection": {
+    "ai_detected_intent": "auto",
+    "final_task_type": "regression",
+    "decision_reason": "The target column is numeric and continuous, so ADP AI selected Random Forest Regressor."
+  },
+  "recommendations": [
+    "Data quality: No major missing values found in the uploaded dataset.",
+    "No duplicate rows found, so the dataset is suitable for prediction analysis.",
+    "Target analysis: Average Profit is 52748.32, median is 56517.0, minimum is -338246.0, and maximum is 451677.0.",
+    "High priority: Improve 'Revenue' because it has a positive relationship with Profit. Random Forest importance is 59.35%.",
+    "Control 'Expenses' because higher values may reduce Profit. Correlation detected is -0.615.",
+    "Control 'Assets' because higher values may reduce Profit. Correlation detected is -0.005.",
+    "High priority: Improve 'Liabilities' because it has a positive relationship with Profit. Random Forest importance is 0.23%.",
+    "Improvement plan: Focus on the top important features that influence 'Profit' because they have the strongest impact on prediction."
+  ],
+  "recommendation_sections": {
+    "data_quality": [
+      "Data quality: No major missing values found in the uploaded dataset.",
+      "No duplicate rows found, so the dataset is suitable for prediction analysis."
+    ],
+    "target_analysis": [
+      "Target analysis: Average Profit is 52748.32, median is 56517.0, minimum is -338246.0, and maximum is 451677.0.",
+      "High priority: Improve 'Revenue' because it has a positive relationship with Profit. Random Forest importance is 59.35%.",
+      "Control 'Expenses' because higher values may reduce Profit. Correlation detected is -0.615.",
+      "Control 'Assets' because higher values may reduce Profit. Correlation detected is -0.005.",
+      "High priority: Improve 'Liabilities' because it has a positive relationship with Profit. Random Forest importance is 0.23%."
+    ],
+    "domain_strategy": [
+      "Improvement plan: Focus on the top important features that influence 'Profit' because they have the strongest impact on prediction."
+    ],
+    "goal_strategy": []
+  },
+  "prediction_flow": [
+    "User uploaded dataset",
+    "ADP AI read rows and columns",
+    "ADP AI checked target column",
+    "ADP AI cleaned missing values",
+    "ADP AI prepared numeric and categorical features",
+    "ADP AI selected suitable ML model",
+    "Random Forest model trained using train-test split",
+    "Model predictions generated",
+    "Evaluation metrics calculated",
+    "Feature importance generated",
+    "Recommendation intelligence generated",
+    "Prediction report prepared"
+  ],
+  "report_ready": true,
+  "report_id": "f39a73c9-7fc5-474c-a972-3a5f7676159f",
+  "report_download_url": "/api/report/download/f39a73c9-7fc5-474c-a972-3a5f7676159f"
+}
